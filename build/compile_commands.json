@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/home/sofia/treesort-1/build",
+  "command": "/usr/bin/c++ -DFILES_DIRECTORY=\\\"/home/sofia/treesort-1/files\\\" -I/home/sofia/treesort-1/include -g -std=gnu++23 -Wall -Werror -Wconversion -o CMakeFiles/AYED_TPG_2C2024.dir/main.cpp.o -c /home/sofia/treesort-1/main.cpp",
+  "file": "/home/sofia/treesort-1/main.cpp",
+  "output": "CMakeFiles/AYED_TPG_2C2024.dir/main.cpp.o"
+}
+]

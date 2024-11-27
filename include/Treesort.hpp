@@ -20,6 +20,10 @@ class Treesort{
 };
 
 void Treesort::generar_vector_aleatorio(int tamanio){
+    //para poder crear varios vectores consecutivamente
+    while(!vector.vacio()){
+        vector.baja();
+    }
     for(int i = 0; i < tamanio; i++){
         int numero_alta = rand() % 10000;
         if(vector.ya_esta(numero_alta)){
@@ -38,6 +42,7 @@ Treesort::Treesort(){
 }
 
 void Treesort::ordenar_treesort(){
+    //creo el diccionario y lo ordeno en esta funcion asi mide bien el tiempo
     for(size_t i = 0; i < vector.tamanio(); i++){
         diccionario.alta(vector[i], vector[i], cantidad_operaciones);
     }

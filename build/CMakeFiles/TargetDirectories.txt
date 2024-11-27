@@ -1,3 +1,0 @@
-/home/brian/Documentos/Algoritmos y Programacion 2/tpg_3/build/CMakeFiles/ayed_introduccion_cpp.dir
-/home/brian/Documentos/Algoritmos y Programacion 2/tpg_3/build/CMakeFiles/edit_cache.dir
-/home/brian/Documentos/Algoritmos y Programacion 2/tpg_3/build/CMakeFiles/rebuild_cache.dir

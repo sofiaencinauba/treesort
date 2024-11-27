@@ -28,6 +28,8 @@ private:
     std::size_t cantidad_datos;
 
 public:
+    bool existe(Clave clave);
+
     // Constructor.
     Diccionario();
 
@@ -477,6 +479,20 @@ void Diccionario<Clave, T>::obtener_valores_recursivo(NodoDiccionario<Clave, T>*
     }
 }
 
+template<typename Clave, typename T>
+bool Diccionario<Clave, T>::existe(Clave clave) {
+    NodoDiccionario<Clave, T>* actual = raiz;
+    while (actual != nullptr) {
+        if (clave == actual->obtener_clave()) {
+            return true; // Clave encontrada.
+        } else if (clave < actual->obtener_clave()) {
+            actual = actual->obtener_hijo_izquierdo(); // Buscar en el subárbol izquierdo.
+        } else {
+            actual = actual->obtener_hijo_derecho(); // Buscar en el subárbol derecho.
+        }
+    }
+    return false; // Clave no encontrada.
+}
 
 
 

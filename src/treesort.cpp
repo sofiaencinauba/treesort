@@ -18,9 +18,12 @@ Vector<int> treesort(Vector<int>& datos, int& operaciones) {
 
     // Insertar los datos en el ABB y contar operaciones.
     for (size_t i = 0; i < datos.tamanio(); i++) {
+        if (!diccionario.existe(datos[i])) { // Verifica si la clave no existe antes de insertarla.
         diccionario.alta(datos[i], datos[i]); // Clave y valor iguales.
         operaciones++;
     }
+}
+
 
     // Realizar recorrido inorden para obtener el vector ordenado.
     ordenado = diccionario.inorder();

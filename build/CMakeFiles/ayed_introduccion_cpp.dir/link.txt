@@ -1,0 +1,1 @@
+/usr/bin/g++ -g CMakeFiles/ayed_introduccion_cpp.dir/main.cpp.o CMakeFiles/ayed_introduccion_cpp.dir/src/treesort.cpp.o -o ayed_introduccion_cpp 

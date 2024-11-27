@@ -125,6 +125,7 @@ public:
 
     bool ya_esta(T dato);
 
+
     // Destructor.
     ~Vector();
 };
@@ -509,5 +510,6 @@ void Vector<T>::inicializar(size_t tamanio_oficial, T valor_inicial) {
 
     tamanio_logico = tamanio_oficial;
 }
+
 
 #endif

@@ -18,6 +18,7 @@ int main() {
 
     for (int size = 10; size <= 1000; size += 10) {
         int contador_operaciones = 0;
+        //inicializamos en 0.0 el tiempo
         std::chrono::duration<double> tiempoTotal(0.0);
 
         // Ejecutar 5 veces y calcular el promedio.
@@ -26,7 +27,8 @@ int main() {
             auto inicio = high_resolution_clock::now();
                 treesort.ordenar_treesort(datos);
             auto fin = high_resolution_clock::now();
-            tiempoTotal += std::chrono::duration<double> (fin - inicio);
+            std::chrono::duration<double> duracion = fin - inicio;
+            tiempoTotal += duracion;
             contador_operaciones += treesort.operaciones();
         }
 

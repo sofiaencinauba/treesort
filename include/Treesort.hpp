@@ -29,7 +29,7 @@ void Treesort::ordenar_treesort(Vector<int> vector){
     for(size_t i = 0; i < vector.tamanio(); i++){
         diccionario.alta(vector[i], vector[i], cantidad_operaciones);
     }
-    Vector<int> vector_ordenado = diccionario.inorder(cantidad_operaciones);
+    Vector<int> vector_ordenado = diccionario.inorder();
 }
 
 Vector<int> Treesort::generar_vector_aleatorio(int tamanio){

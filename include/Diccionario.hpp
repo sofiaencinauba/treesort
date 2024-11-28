@@ -62,8 +62,8 @@ public:
 
     // Pre: -
     // Post: Devuelve el recorrido inorder.
-    Vector<T> inorder(int& contador);
-    void _inorder_recursivo(NodoDiccionario<Clave, T>* nodo, Vector<T>& vector, int& contador);
+    Vector<T> inorder();
+    void _inorder_recursivo(NodoDiccionario<Clave, T>* nodo, Vector<T>& vector);
 
 
     // Pre: -
@@ -302,24 +302,23 @@ T& Diccionario<Clave, T>::operator[](Clave clave) {
 }
 
 template<typename Clave, typename T>
-void Diccionario<Clave, T>::_inorder_recursivo(NodoDiccionario<Clave, T>* nodo, Vector<T>& recorrido, int& contador) {
+void Diccionario<Clave, T>::_inorder_recursivo(NodoDiccionario<Clave, T>* nodo, Vector<T>& recorrido) {
     //IRD
-    contador++;
     if(nodo->obtener_hijo_izquierdo()){
-        _inorder_recursivo(nodo->obtener_hijo_izquierdo(), recorrido, contador);
+        _inorder_recursivo(nodo->obtener_hijo_izquierdo(), recorrido);
     }
     recorrido.alta(nodo->obtener_dato());
     if(nodo->obtener_hijo_derecho()){
-        _inorder_recursivo(nodo->obtener_hijo_derecho(), recorrido, contador);
+        _inorder_recursivo(nodo->obtener_hijo_derecho(), recorrido);
     }
 
 }
 
 template<typename Clave, typename T>
-Vector<T> Diccionario<Clave, T>::inorder(int& contador) {
+Vector<T> Diccionario<Clave, T>::inorder() {
     Vector<T> recorrido;
     if(raiz){
-        _inorder_recursivo(raiz, recorrido, contador);
+        _inorder_recursivo(raiz, recorrido);
     }
     return recorrido;
 }

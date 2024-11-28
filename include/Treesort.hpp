@@ -34,13 +34,13 @@ void Treesort::ordenar_treesort(Vector<int> vector){
 
 Vector<int> Treesort::generar_vector_aleatorio(int tamanio){
     Vector<int> vector;
-    for(int i = 0; i < tamanio; i++){
+    int i = 0;
+    while(i < tamanio){
         int numero_alta = rand() % 10000;
         if(vector.ya_esta(numero_alta)){
-            i--;
-            continue;
         }else{
             vector.alta(numero_alta);
+            i++;
         }
     }
     return vector;

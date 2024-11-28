@@ -24,6 +24,7 @@ int main() {
         // Ejecutar 5 veces y calcular el promedio.
         for (int i = 0; i < 5; i++) {
             Vector<int> datos = treesort.generar_vector_aleatorio(size);
+            datos.mostrar();
             auto inicio = high_resolution_clock::now();
                 treesort.ordenar_treesort(datos);
             auto fin = high_resolution_clock::now();
@@ -33,7 +34,7 @@ int main() {
         }
 
         // Guardar resultados promediados en el archivo.
-        archivo << size << "," << treesort.operaciones() / 5 << "," << tiempoTotal / 5 << "\n";
+        archivo << size << "," << contador_operaciones / 5 << "," << tiempoTotal / 5 << "\n";
         cout << "Procesado tamaño: " << size << "\n";
     }
 

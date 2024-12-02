@@ -1,0 +1,3 @@
+/home/sofia/treesort-1/build/CMakeFiles/AYED_TPG_2C2024.dir
+/home/sofia/treesort-1/build/CMakeFiles/edit_cache.dir
+/home/sofia/treesort-1/build/CMakeFiles/rebuild_cache.dir

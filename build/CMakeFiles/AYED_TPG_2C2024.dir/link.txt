@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/AYED_TPG_2C2024.dir/main.cpp.o -o /home/sofia/treesort-1/main 

@@ -1,1 +1,3 @@
-# treesort
+# Algoritmo de Treesort - Graficos 
+
+<h5>Se implementó el algoritmo de Treesort utilizando un Árbol Binario de Búsqueda (ABB) basado en diccionarios. El objetivo es observar cómo transcurre el proceso de ordenamiento a lo largo del tiempo y verificar si se aplica el comportamiento teórico de los casos: Mejor Caso/Promedio O(n log₂ n) y Peor Caso O(n²). Esto permite analizar la eficiencia en cuanto a las complejidades algorítmicas, así como identificar si los árboles se mantienen balanceados o, en el peor de los casos, se vuelven muy desbalanceados.</h5>
